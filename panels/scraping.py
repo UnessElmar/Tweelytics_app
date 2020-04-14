@@ -19,6 +19,18 @@ from dotenv import load_dotenv
 project_folder = os.path.expanduser('~/tweelytics_app')  
 load_dotenv(os.path.join(project_folder, '.env'))
 
+# create data folders if don't exist
+try:
+    os.mkdir('data/hashtag')
+except:
+    pass
+
+try:
+    os.mkdir('data/user')
+except:
+    pass
+
+
 # access to tweepy API
 consumer_key_mentions = os.getenv('consumer_key_mentions')
 consumer_secret_mentions = os.getenv('consumer_secret_mentions')
