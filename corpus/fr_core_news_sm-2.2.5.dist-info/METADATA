@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: fr-core-news-sm
+Version: 2.2.5
+Summary: French multi-task CNN trained on the French Sequoia (Universal Dependencies) and WikiNER corpus. Assigns context-specific token vectors, POS tags, dependency parse and named entities. Supports identification of PER, LOC, ORG and MISC entities.
+Home-page: https://explosion.ai
+Author: Explosion
+Author-email: contact@explosion.ai
+License: LGPL
+Platform: UNKNOWN
+Requires-Dist: spacy (>=2.2.2)
+
+UNKNOWN
+
+
