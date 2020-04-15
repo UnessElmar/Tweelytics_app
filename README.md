@@ -2,7 +2,7 @@
 
 This app is based on the [Tweepy](https://www.tweepy.org/) and the [Twython](https://twython.readthedocs.io/) APIs in order to scrap tweets whether by a list of hashtags or by user.
 
-The second tap of this app enables the user to visualize the results of topic modeling on the scraped tweets and tweets activity during this scraping period.
+The second tab of this app gives the possibility to visualize the tweets activity and the results of topic modeling on the scraped tweets during this scraping period.
 
 ## Getting Started
 
@@ -30,13 +30,12 @@ pip install -r requirements.txt
 
 ```
 
-To run the app, please create a Tweepy developer account (link is in the `About the App` section). There is an example of how the bash script should look like in the `secrets.example.env` file. Be sure to create a new file named `.env` file and put your credentials in the file. Therefore, your credentials will not get pushed to github as the `.env` file is in the `.gitignore`.
+To run the app, please create a Tweepy developer account (link is in the `About the App` section). There is an example of how the bash script should look like in the `secrets.example.env` file. Be sure to create a new file named `.env` and put your credentials in the file. Therefore, your credentials will not get pushed to github as the `.env` file is in the `.gitignore`.
 
 Run the app
 
 ```
 python index.py
-
 ```
 
 ## About the App
