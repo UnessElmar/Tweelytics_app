@@ -8,7 +8,7 @@ import dash
 import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output, State
-from app.app import app
+from app import app
 from panels import scraping, analysis
 
 server = app.server
