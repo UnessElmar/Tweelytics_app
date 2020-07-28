@@ -1,4 +1,10 @@
 # -*- coding: utf-8 -*-
+import sys
+import warnings
+
+if not sys.warnoptions:
+    warnings.simplefilter("ignore")
+    
 import os
 import re
 from datetime import date, timedelta

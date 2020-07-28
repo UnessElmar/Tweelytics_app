@@ -1,4 +1,10 @@
 # -*- coding: utf-8 -*-
+import sys
+import warnings
+
+if not sys.warnoptions:
+    warnings.simplefilter("ignore")
+    
 import os
 import re
 import base64
@@ -470,7 +476,7 @@ def close_ana_modal_callback(n, n2):
         Input("new_analysis", "n_clicks"),
     ],
 )
-def close_ana_modal_callback(n):
+def close_ana_modal_callback1(n):
     if n:
         usr_data_files = [{"label":filename[:-4], "value":os.path.join('data/user', filename)} for filename in os.listdir('data/user') if filename.endswith('.csv')]
         hashtag_data_files = [{"label":filename[:-4], "value":os.path.join('data/hashtag', filename)} for filename in os.listdir('data/hashtag') if filename.endswith('.csv')]
@@ -536,7 +542,7 @@ def show_nbins(n):
         Input('history_display_mode', 'value'),
     ]
 )
-def show_nbins(n, d_mode):
+def show_nbins1(n, d_mode):
     if n:
         if d_mode == 'H':
             return {'display':'block', "margin-bottom":'10px'}
@@ -625,7 +631,7 @@ def collapse_function(n):
     Output('lda_block', 'style'),
     [Input('collapse_lda', 'n_clicks')],
 )
-def collapse_function(n):
+def collapse_function1(n):
     if n:
         if n%2:
             return {'display':'none'}

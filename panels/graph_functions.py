@@ -1,3 +1,9 @@
+import sys
+import warnings
+
+if not sys.warnoptions:
+    warnings.simplefilter("ignore")
+    
 import pandas as pd
 from spacy.lang.fr.stop_words import STOP_WORDS
 from wordcloud import WordCloud

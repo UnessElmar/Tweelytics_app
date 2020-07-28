@@ -1,3 +1,9 @@
+import sys
+import warnings
+
+if not sys.warnoptions:
+    warnings.simplefilter("ignore")
+    
 import dash
 import dash_html_components as html
 
